@@ -1,12 +1,12 @@
 # Guestbook
 ## Installation
-### 1. clone project from github
+### 1. Clone project from github
 > **git clone https://github.com/Rydzi/guestbook.git [projectName]** \
 > **cd projectName**
-### 2. create and install config files
+### 2. Create and install config file
 > **cp .env.example .env** \
 > setup .env file
-### 3. install composer dependecies
+### 3. Install composer dependecies
 > **composer install** \
 > **npm install**
 ### 4. Generate an app encryption key
@@ -17,6 +17,6 @@
 ### 7. Create data for project
 > **php artisan data** to create testing data \
 > or you can import export of test from data tables_test_data.sql
-### 8. run project 
+### 8. Run project 
 > **php artisan serve** & open link \
 > or run from installed webserver
