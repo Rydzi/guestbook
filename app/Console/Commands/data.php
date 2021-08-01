@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\Models\Post;
 use App\Models\Region;
-
+use Illuminate\Support\Facades\Cache;
 
 class data extends Command
 {
@@ -47,9 +47,12 @@ class data extends Command
     /**
      * Delete all posts from guestbook
      */
-    private function deleteGuestbook($count = 10)
+    private function deleteGuestbook()
     {
         Post::truncate();
+
+        //delete cached data
+        Cache::forget('posts');
     }
 
 
